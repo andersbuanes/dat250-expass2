@@ -5,7 +5,7 @@ import javax.persistence.*;
  * This file contains means to clear the database, if JPA's drop-table actions runs into inconsistencies as shown in the lectures
  */
 public class DatabaseInitializer {
-	private static final String PERSISTENCE_UNIT_NAME = ".";  // Your unit name here, see persistence.xml!!
+	private static final String PERSISTENCE_UNIT_NAME = "experiment2";  // Your unit name here, see persistence.xml!!
     private static EntityManagerFactory factory;
 	public static void main(String[] args) { 
 		factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
